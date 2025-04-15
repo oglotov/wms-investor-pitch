@@ -1,60 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WMS Investor Pitch</title>
   <style>
     body {
       font-family: sans-serif;
       background: #f9fafb;
-      padding: 2rem;
+      padding: 1.5rem;
       color: #111827;
+      line-height: 1.6;
     }
+
     .card {
       background: white;
       border-radius: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
       margin-bottom: 2rem;
     }
+
     h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
     }
+
     h2 {
       font-size: 1.25rem;
       margin-bottom: 1rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.25rem;
     }
+
     .progress {
       width: 100%;
       background: #e5e7eb;
       border-radius: 9999px;
       height: 10px;
-      margin-top: 0.5rem;
+      margin-top: 0.75rem;
     }
+
     .progress-bar {
       background: #3b82f6;
       height: 10px;
       border-radius: 9999px;
       width: 50%;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
+
+    ul {
+      padding-left: 1.25rem;
     }
-    th, td {
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .valuation-block {
       border: 1px solid #e5e7eb;
-      padding: 0.5rem;
-      text-align: left;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background: #f9fafb;
     }
-    th {
-      background: #f3f4f6;
+
+    .valuation-block strong {
+      display: inline-block;
+      width: 140px;
     }
   </style>
 </head>
+
 <body>
   <h1>WMS Assistant — Інвестиційна презентація</h1>
 
@@ -67,7 +84,9 @@
       <li>Загальний потенціал терміналів: <strong>111 800 ТЗД</strong></li>
       <li>Заплановане охоплення за 5 років: <strong>2 890 ТЗД</strong></li>
     </ul>
-    <div class="progress"><div class="progress-bar"></div></div>
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
   </div>
 
   <div class="card">
@@ -83,12 +102,19 @@
 
   <div class="card">
     <h2>Оцінка компанії</h2>
-    <table>
-      <tr><th>Метод</th><th>Оцінка (€)</th><th>Деталі</th></tr>
-      <tr><td>DCF</td><td>1 189 028</td><td>10 років, зростання +5%, окупність на 7-му році</td></tr>
-      <tr><td>Мультиплікатор прибутку (10×)</td><td>1 057 952</td><td>Прибуток × 10, мультиплікатор 5.29×</td></tr>
-      <tr><td>Мультиплікатор прибутку (12×)</td><td>1 251 049</td><td>Прибуток × 12, мультиплікатор 6.26×</td></tr>
-    </table>
+
+    <div class="valuation-block">
+      <strong>Метод:</strong> DCF<br />
+      <strong>Оцінка:</strong> €1 189 028<br />
+      <strong>Деталі:</strong> 10 років, зростання +5%, окупність на 7-му році
+    </div>
+
+    <div class="valuation-block">
+      <strong>Метод:</strong> Мультиплікатор 10×<br />
+      <strong>Оцінка:</strong> €1 057 952<br />
+      <strong>Мультиплікатор:</strong> 5.29×
+    </div>
   </div>
 </body>
+
 </html>
